@@ -3,7 +3,6 @@ package Seminar3HW;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Scanner;
 
 public class ContactCard {
 
@@ -37,9 +36,7 @@ public class ContactCard {
             try {
                 this.phone = Long.parseLong(s);
                 continue;
-            } catch (NumberFormatException e) {
-
-            }
+            } catch (NumberFormatException e) {}
             if (s.length() == 1) {
                 this.sex = s.charAt(0);
                 continue;
